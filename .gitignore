@@ -27,3 +27,6 @@ MCP키트_안내서_인쇄용.pdf
 
 # Claude Code 개인 설정
 .claude/settings.local.json
+
+# Playwright MCP가 남기는 화면 기록
+.playwright-mcp/
