@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>몽글 공방 주문 페이지 (연습용, 일부러 고장 남)</title>
+  <!-- 1) Sentry 브라우저 SDK (공식 CDN, 오류만 잡는 가벼운 버전) -->
+  <script
+    src="https://browser.sentry-cdn.com/11.17.0/bundle.min.js"
+    integrity="sha384-hDIKvXIZjqlgYU4Xw3A4xx3aRaGTz2YtgxtGBBLxy+FJ5H1+w4+X/3NfA9+jsgwx"
+    crossorigin="anonymous"></script>
+  <!-- 2) 내 DSN이 들어 있는 설정 파일 (sentry설정.example.js를 복사해서 만들어요) -->
+  <script src="sentry설정.js"></script>
+  <!-- 3) Sentry 켜기 -->
+  <script>
+    if (window.Sentry && window.SENTRY_DSN && !window.SENTRY_DSN.includes("여기에")) {
+      Sentry.init({ dsn: window.SENTRY_DSN, release: "monggle-order@1.0.0", environment: "practice" });
+      console.log("Sentry 연결됨");
+    } else {
+      console.warn("Sentry 설정이 아직 없어요. README 연결하기를 보세요.");
+    }
+  </script>
+  <style>
+    body { font-family: -apple-system, "Apple SD Gothic Neo", sans-serif; max-width: 560px; margin: 32px auto; padding: 0 16px; background: #faf6f0; color: #3b322c; }
+    button { display: block; width: 100%; margin: 12px 0; padding: 14px; font-size: 1rem; border: 0; border-radius: 10px; background: #e9dccb; cursor: pointer; }
+    #결과 { min-height: 3em; padding: 12px; background: #fff; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <h1>몽글 공방 주문 (연습용)</h1>
+  <p>버튼 3개가 모두 <b>일부러 고장</b> 나 있어요. 눌러서 오류를 만들어 보세요.</p>
+
+  <button id="담기">① 원데이 컵 클래스 장바구니에 담기</button>
+  <button id="합계">② 장바구니 합계 보기</button>
+  <button id="예약">③ 저장된 예약 날짜 불러오기</button>
+
+  <div id="결과">결과가 여기에 나와요.</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

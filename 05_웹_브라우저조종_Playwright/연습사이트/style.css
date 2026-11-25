@@ -1,0 +1,15 @@
+body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;max-width:860px;margin:0 auto;padding:16px;background:#fbf8f2;color:#2b2b2b}
+header{border-bottom:3px solid #8b5e34;margin-bottom:16px}
+h1{color:#8b5e34;margin:8px 0}
+.notice{background:#fff3cd;padding:8px 12px;border-radius:6px;font-size:14px}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:16px 0}
+.book{background:#fff;border:1px solid #e3d9c9;border-radius:8px;padding:12px}
+.book h2{font-size:17px;margin:0 0 6px}
+.book p{margin:3px 0;font-size:14px}
+.price{font-weight:bold;color:#b4441e}
+.soldout{color:#999;text-decoration:line-through}
+.badge{display:inline-block;font-size:12px;padding:1px 6px;border-radius:4px;background:#eee}
+.pager{text-align:center;margin:20px 0}
+.pager a,.pager span{display:inline-block;margin:0 4px;padding:6px 10px;border:1px solid #8b5e34;border-radius:4px;text-decoration:none;color:#8b5e34}
+.pager span.now{background:#8b5e34;color:#fff}
+footer{font-size:12px;color:#888;border-top:1px solid #ddd;padding-top:8px}

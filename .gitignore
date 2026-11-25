@@ -1,0 +1,29 @@
+# 파이썬 가상환경, 노드 패키지
+.venv/
+venv/
+__pycache__/
+node_modules/
+
+# 비밀 정보
+.env
+.env.*
+!.env.example
+
+# 결과물 (영상·음성·이미지는 용량이 커요)
+**/결과/
+*.mov
+
+# 맥 숨김 파일
+.DS_Store
+
+# 인쇄용 안내서
+MCP키트_안내서_인쇄용.pdf
+
+# MCP 설정 (개인 계정 정보가 들어갈 수 있어요)
+.mcp.local.json
+
+# 옵시디언 앱 설정 폴더
+.obsidian/
+
+# Claude Code 개인 설정
+.claude/settings.local.json
